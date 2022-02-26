@@ -1,0 +1,24 @@
+#include<studio.h>
+void main()
+{
+int a,b;
+switch(a)
+{
+case 0:
+printf ("Food item-manchurian\nPrice-100");
+break;
+case 1:
+printf ("Food item-Noodles\nPrice-120");
+break;
+case 2:
+printf ("Food item-Pastha\nPrice-240");
+break;
+case 3:
+printf ("Food item-Paani puri\nPrice-40")
+break;
+case 4:
+printf ("Food item-Biryani\nPrice-350");
+break;
+default ("not a valid case");
+}
+}
