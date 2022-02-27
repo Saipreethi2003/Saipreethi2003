@@ -1,0 +1,16 @@
+#include<studio.h>
+void main()
+{
+int s,p;
+printf("Enter the values of s and p :");
+scanf("%d%d",&s,&p);
+printf ("LCM of %d and %d = %d",s,p,lcm (s,p));
+}
+int lcm(int a,int b)
+{
+static int r=0;
+r=r+b;
+if((r%a==0) && (r%b==0))
+return r;
+return lcm(a,b);
+}
