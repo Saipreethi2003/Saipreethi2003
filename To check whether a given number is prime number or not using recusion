@@ -1,0 +1,42 @@
+#include<studio.h> 
+int prime(int,int)
+void main ()
+{ 
+int s,a; 
+printf ("Enter any number:");
+scanf("%d",&s);
+if(s==0||s==1)
+{ 
+printf ("%d is not a prime number\n",s);
+}
+else
+{ 
+a=prime (s,s/2);
+if(a==1) 
+{
+printf ("%d is a prime number\n",s);
+}
+else
+{
+printf ("%d is not a prime number\n",s);
+}
+} 
+}
+int prime (int i,int j)
+{
+if( j==1)
+{
+return 1;
+}
+else
+{
+if(i%j==0)
+{
+return 0;
+}
+else
+{
+prime (i,j-1);
+}
+}
+}
