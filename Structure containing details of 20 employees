@@ -1,0 +1,21 @@
+#include<studio.h>
+struct emp
+{
+char name[30];
+int age;
+int pno;
+float salary;
+}e[20];
+void main()
+{
+int s;
+for(s=1;s<=20;s++)
+{
+printf("Enter the details of employee %d",s);
+scanf("%s%d%d%f",e[s].name,&e[s].age,&e[s].pno,&e[s].salary);
+}
+for(s=1;s<=20;s++)
+{
+printf ("%s\t%d\t%d\t%f",e[s].name,e[s].age,e[s].pno,e[s].salary);
+}
+}
