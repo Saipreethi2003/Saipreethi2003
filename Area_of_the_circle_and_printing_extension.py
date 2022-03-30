@@ -6,5 +6,5 @@ print("Area of the circle is : {0}".format(area)")
 #printing extension of the given file
 filename=input("Enter the name of the file : ")
 f_exts=filename.split(".")
-print("The extension of the given filename is : ",repr(f_exts[-1]))
+print("The extension of the given filename is : ",f_exts[-1])
 
