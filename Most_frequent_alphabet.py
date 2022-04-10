@@ -7,5 +7,5 @@ def most_frequent(string):
             d[key] += 1
     return d
 
-print (most_frequent('mississippi'))
+print (most_frequent('aabbcccdddeeeessss'))
 
